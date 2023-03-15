@@ -1,4 +1,5 @@
- int A = 8;
+//The purpose of this program is to display digits on a 7-segment display in the simplest way possible
+int A = 8;
  int B = 7;
  int C = 6;
  int D = 5;
@@ -9,7 +10,7 @@
 
 
 void setup()
-{
+{// setting pins as output
   pinMode(A, OUTPUT);
   pinMode(B, OUTPUT);
   pinMode(C, OUTPUT);
@@ -22,7 +23,8 @@ void setup()
 
 
 
-void loop() { 
+void loop() { //display numbers on 7 segment
+//zero
   digitalWrite(A, HIGH);
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
@@ -32,6 +34,7 @@ void loop() {
   digitalWrite(G, LOW);
   digitalWrite(H, LOW);
   delay(1000);
+ //one
   digitalWrite(A, LOW);
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
@@ -41,6 +44,7 @@ void loop() {
   digitalWrite(G, LOW);
   digitalWrite(H, LOW);
 delay(1000);
+//two
   digitalWrite(A, HIGH);
   digitalWrite(B, HIGH);
   digitalWrite(C, LOW);
@@ -50,6 +54,7 @@ delay(1000);
   digitalWrite(G, HIGH);
   digitalWrite(H, LOW);
 delay(1000);
+//three
   digitalWrite(A, HIGH);
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
@@ -59,6 +64,7 @@ delay(1000);
   digitalWrite(G, HIGH);
   digitalWrite(H, LOW);
 delay(1000);
+//four
   digitalWrite(A, LOW);
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
@@ -68,6 +74,7 @@ delay(1000);
   digitalWrite(G, HIGH);
   digitalWrite(H, LOW);
 delay(1000);
+//five
   digitalWrite(A, HIGH);
   digitalWrite(B, LOW);
   digitalWrite(C, HIGH);
@@ -77,6 +84,7 @@ delay(1000);
   digitalWrite(G, HIGH);
   digitalWrite(H, LOW);
 delay(1000);
+//six
   digitalWrite(A, HIGH);
   digitalWrite(B, LOW);
   digitalWrite(C, HIGH);
@@ -86,6 +94,7 @@ delay(1000);
   digitalWrite(G, HIGH);
   digitalWrite(H, LOW);
 delay(1000);
+//seven
   digitalWrite(A, HIGH);
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
@@ -95,6 +104,7 @@ delay(1000);
   digitalWrite(G, LOW);
   digitalWrite(H, LOW);
 delay(1000);
+//eight
   digitalWrite(A, HIGH);
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
@@ -104,6 +114,7 @@ delay(1000);
   digitalWrite(G, HIGH);
   digitalWrite(H, LOW);
 delay(1000);
+//nine
   digitalWrite(A, HIGH);
   digitalWrite(B, HIGH);
   digitalWrite(C, HIGH);
